@@ -1,0 +1,5 @@
+{
+  "name": "ChatDonno",
+  "description": "Interface principal com layout LongCat: widget de chat Gemini 2.5, pronto para embutir em sites e landing pages.",
+  "requestFramePermissions": []
+}
