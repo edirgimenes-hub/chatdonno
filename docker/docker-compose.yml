@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    volumes:
+      - "./frontend:/app"
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - LONG_API_KEY=${LONG_API_KEY}
+    volumes:
+      - "./backend:/app"
+      - "./database:/app/database"
